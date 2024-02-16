@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Bus Booking Site</title>
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+      nav,nav a{color:#fff}nav{background-color:#333;display:flex;justify-content:space-between;align-items:center;padding:10px 20px}nav a{text-decoration:none;padding:10px}nav a:hover{background-color:#555}.logo{font-size:24px;font-weight:700}body{font-family:Arial,sans-serif;margin:0;padding:0;background-image:url('bus.jpg');background-size:cover;background-position:center}.container{max-width:800px;margin:20px auto;padding:20px;background-color:rgba(255,255,255,.8);border-radius:10px}h1,h2{text-align:center}.contact-form,.contact-info{margin-top:20px}.contact-item{margin-bottom:20px}.contact-item h2{color:#007bff;margin-bottom:5px}.contact-form input[type=email],.contact-form label,.contact-form textarea{display:block;margin-top:10px;width:100%;padding:5px}.contact-form textarea{resize:vertical}.contact-form button{margin-top:10px;padding:5px 20px;background-color:#007bff;color:#fff;border:none;cursor:pointer}.contact-form button:hover{background-color:#0056b3}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
       <nav>
@@ -22,35 +56,38 @@
             </div>
           </nav>
 
-    <div class="container">
-        <h1>CONTACT US</h1>
-        <div class="contact-info">
-            <div class="contact-item">
-                <h2>Location</h2>
-                <p>RANCHI ,JHARKHAND</p>
-                <p>PATRATU, JHARKHAND, 829118</p>
-            </div>
-            <div class="contact-item">
-                <h2>EMAIL</h2>
-                <p>sourav@busbooking.com</p>
-            </div>
-            <div class="contact-item">
-                <h2>Phone</h2>
-                <p>9931916851</p>
-            </div>
-        </div>
-        <div class="contact-form">
-            <h2>Send us a message</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </div>
+<div class="container">
+  <h1>Contact Us</h1>
+  
+  <form action="#" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject">
+    
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <div>
+    <h2>Contact Information</h2>
+    <p>123 Main St, Cityville, State, Zip Code</p>
+    <p>Phone: 123-456-7890</p>
+    <p>Email: info@example.com</p>
+  </div>
+
+  <div>
+    <h2>Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.076225508287!2d-122.07997078469344!3d37.391058579837014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbee0e70e591f%3A0xeb95d1893cf58557!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1645020530916!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</div>
+
 </body>
 </html>
+
